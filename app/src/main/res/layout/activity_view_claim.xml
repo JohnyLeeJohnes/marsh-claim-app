@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        tools:context=".Activities.Claims.ViewClaimActivity">
+
+        <!-- Top Logo -->
+        <ImageView
+            android:id="@+id/company_logo"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/logo_description"
+            android:src="@drawable/marsh_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Profile_Header -->
+        <TextView
+            android:id="@+id/claims_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/car_claim_header"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/company_logo"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <!-- Rectangle box -->
+        <View
+            android:id="@+id/profile_rectangle_1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/background_rectangle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/claims_header"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <!-- Date -->
+        <TextView
+            android:id="@+id/date_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/date"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/profile_rectangle_1"
+            app:layout_constraintTop_toTopOf="@+id/profile_rectangle_1" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/date"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toStartOf="@+id/policy_number"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/profile_rectangle_1"
+            app:layout_constraintTop_toBottomOf="@+id/date_header" />
+
+        <!-- Policy number -->
+        <TextView
+            android:id="@+id/policy_number_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/policy_number"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/profile_rectangle_1"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/date_header"
+            app:layout_constraintTop_toTopOf="@+id/profile_rectangle_1" />
+
+        <TextView
+            android:id="@+id/policy_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/policy_number"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="@+id/profile_rectangle_1"
+            app:layout_constraintTop_toBottomOf="@+id/policy_number_header" />
+
+        <!-- Place -->
+        <TextView
+            android:id="@+id/place_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/place"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/profile_rectangle_1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/profile_rectangle_1"
+            app:layout_constraintTop_toBottomOf="@+id/date" />
+
+        <TextView
+            android:id="@+id/place"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/place"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="@+id/profile_rectangle_1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/profile_rectangle_1"
+            app:layout_constraintTop_toBottomOf="@+id/place_header" />
+
+        <!-- LINE -->
+        <View
+            android:id="@+id/line_1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="@+id/profile_rectangle_1"
+            app:layout_constraintStart_toStartOf="@+id/profile_rectangle_1"
+            app:layout_constraintTop_toBottomOf="@+id/place" />
+
+        <!-- SPZ -->
+        <TextView
+            android:id="@+id/car_spz_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/spz"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/profile_rectangle_1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/profile_rectangle_1"
+            app:layout_constraintTop_toBottomOf="@+id/line_1" />
+
+        <TextView
+            android:id="@+id/car_spz"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/spz"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toStartOf="@+id/car_type"
+            app:layout_constraintStart_toStartOf="@+id/profile_rectangle_1"
+            app:layout_constraintTop_toBottomOf="@+id/car_spz_header" />
+
+        <!-- Car Type -->
+        <TextView
+            android:id="@+id/car_type_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/car_type"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/profile_rectangle_1"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/profile_rectangle_1"
+            app:layout_constraintTop_toBottomOf="@+id/line_1" />
+
+        <TextView
+            android:id="@+id/car_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/car_type"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="@+id/profile_rectangle_1"
+            app:layout_constraintTop_toBottomOf="@+id/car_type_header" />
+
+        <!-- Firstname -->
+        <TextView
+            android:id="@+id/driver_firstname_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/firstname_hint"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/profile_rectangle_1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/profile_rectangle_1"
+            app:layout_constraintTop_toBottomOf="@+id/car_spz" />
+
+        <TextView
+            android:id="@+id/driver_firstname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/firstname_hint"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="@+id/profile_rectangle_1"
+            app:layout_constraintTop_toBottomOf="@+id/driver_firstname_header" />
+
+        <!-- Lastname -->
+        <TextView
+            android:id="@+id/driver_lastname_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/lastname_hint"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/profile_rectangle_1"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/profile_rectangle_1"
+            app:layout_constraintTop_toBottomOf="@+id/car_spz" />
+
+        <TextView
+            android:id="@+id/driver_lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/lastname_hint"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="@+id/profile_rectangle_1"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/driver_firstname"
+            app:layout_constraintTop_toBottomOf="@+id/driver_lastname_header" />
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/contact_email_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/email_hint"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/profile_rectangle_1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/profile_rectangle_1"
+            app:layout_constraintTop_toBottomOf="@+id/driver_firstname" />
+
+        <TextView
+            android:id="@+id/contact_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/email_hint"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/profile_rectangle_1"
+            app:layout_constraintTop_toBottomOf="@+id/contact_email_header" />
+
+        <!-- Phone number -->
+        <TextView
+            android:id="@+id/contact_phone_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/phone_number"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/profile_rectangle_1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/profile_rectangle_1"
+            app:layout_constraintTop_toBottomOf="@+id/contact_email" />
+
+        <TextView
+            android:id="@+id/contact_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/phone_number"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="@+id/profile_rectangle_1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/profile_rectangle_1"
+            app:layout_constraintTop_toBottomOf="@+id/contact_phone_header" />
+
+        <!-- LINE -->
+        <View
+            android:id="@+id/line_2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="@+id/profile_rectangle_1"
+            app:layout_constraintStart_toStartOf="@+id/profile_rectangle_1"
+            app:layout_constraintTop_toBottomOf="@+id/contact_phone" />
+
+        <!-- Other Info -->
+        <TextView
+            android:id="@+id/other_info_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/damage_range"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/profile_rectangle_1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/profile_rectangle_1"
+            app:layout_constraintTop_toBottomOf="@+id/line_2" />
+
+        <TextView
+            android:id="@+id/other_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/damage_range"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/profile_rectangle_1"
+            app:layout_constraintEnd_toEndOf="@+id/profile_rectangle_1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/profile_rectangle_1"
+            app:layout_constraintTop_toBottomOf="@+id/other_info_header"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <!-- Photos -->
+        <TextView
+            android:id="@+id/photos_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/damage_photos"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/profile_rectangle_1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/profile_rectangle_1"
+            app:layout_constraintTop_toBottomOf="@+id/other_info" />
+
+        <ImageView
+            android:id="@+id/damage_photo_1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/logo_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/photos_header"
+            app:srcCompat="@drawable/ic_camera" />
+
+        <ImageView
+            android:id="@+id/damage_photo_2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/logo_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/damage_photo_1"
+            app:layout_constraintTop_toBottomOf="@+id/photos_header"
+            app:srcCompat="@drawable/ic_camera" />
+
+        <ImageView
+            android:id="@+id/damage_photo_3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="32dp"
+            android:contentDescription="@string/logo_description"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/damage_photo_1"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_camera" />
+
+        <ImageView
+            android:id="@+id/damage_photo_4"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="@string/logo_description"
+            app:layout_constraintBottom_toBottomOf="@+id/profile_rectangle_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/damage_photo_3"
+            app:layout_constraintTop_toBottomOf="@+id/damage_photo_2"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_camera" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

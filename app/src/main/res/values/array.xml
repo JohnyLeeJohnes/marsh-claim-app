@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    -- Locale Menu --
+    <string-array name="locale_list">
+        <item>Česky</item>
+        <item>English</item>
+    </string-array>
+
+</resources>

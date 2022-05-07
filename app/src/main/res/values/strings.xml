@@ -1,0 +1,148 @@
+<resources>
+    -- App Name --
+    <string name="app_name">Marsh Reporting Application</string>
+
+    -- Contact Form --
+    <string name="contact_header">You can contact us via</string>
+
+    -- About_us Form --
+    <string name="about_header">About us</string>
+    <string name="logo_description">marsh_logo</string>
+    <string name="version">Version</string>
+
+    -- Profile Form --
+    <string name="profile_header">Profile Information</string>
+    <string name="fullname_placeholder">Fullname</string>
+    <string name="change_email_placeholder">Change Email</string>
+    <string name="change_password_placeholder">Change Password</string>
+    <string name="old_password_placeholder">Old Password</string>
+    <string name="new_password_placeholder">New Password</string>
+    <string name="button_apply">Apply</string>
+
+    -- Register Form --
+    <string name="register_header">Account registration</string>
+    <string name="header_img_description">Avatar Image</string>
+    <string name="back_button">Back</string>
+    <string name="confirm_button">Confirm</string>
+    <string name="password_hint">Password</string>
+    <string name="email_hint">Email</string>
+    <string name="username_hint">Username</string>
+    <string name="firstname_hint">Firstname</string>
+    <string name="lastname_hint">Lastname</string>
+    <string name="login_link">Already have an account?</string>
+
+    -- Login Form --
+    <string name="login_header_text">Marsh Reporting Application</string>
+    <string name="login_button">Login</string>
+    <string name="login_info">Please use your\nMARSH account credentials</string>
+    <string name="register_link">No account? Register here!</string>
+    <string name="change_languague">Change languague</string>
+
+    -- Dashboard Form --
+    <string name="car_accident_help">Has a car accident happened?</string>
+    <string name="click_here">Click here</string>
+    <string name="click_here_faq">Click here for FAQ</string>
+    <string name="faq_help">Issues with registering a claim or creating an insurance</string>
+
+    -- Claim Form --
+    <string name="car_claim_header">Car Claim Information</string>
+    <string name="car_accidents">Car Accidents</string>
+    <string name="register_claim">Register</string>
+    <string name="what_do_claim">What to do?</string>
+    <string name="list_claims">List of Claims</string>
+
+    -- Register car Form --
+    -- Step 1
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="policy_number">Policy number</string>
+    <string name="place">Place of the accident</string>
+    <string name="get_location">Get my location</string>
+    -- Step 2
+    <string name="basic_info">Basic information</string>
+    <string name="damage_range">Damage range</string>
+    <string name="damage_photos">Damage photos</string>
+    <string name="damaged_car_question">Is your car damaged?</string>
+    <string name="damaged_other_car_question">Is the other car damaged?</string>
+    <string name="damaged_other_question">Is anything else damaged?</string>
+    -- Step 3
+    <string name="driver_car_info">Driver and Car information</string>
+    <string name="car_info">Car information</string>
+    <string name="spz">Plate</string>
+    <string name="car_type">Car type</string>
+    <string name="driver_info">Driver information</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="send">Send</string>
+
+    -- Insurance Form --
+    <string name="list_insurances">List of Insurances</string>
+    <string name="drone_insurance">Drone Insurance</string>
+    <string name="drone_insurance_header">Drone Insurance Information</string>
+    <string name="create_drone_header">Create Drone Insurance</string>
+    <string name="create_button">Create</string>
+    <string name="date_from">Date From</string>
+    <string name="date_to">Date To</string>
+
+    -- FAQ --
+    <string name="question_1">1. I tried to register claim, but it said that my policy does not include this type</string>
+    <string name="question_2">2. I can\'t create drone insurance, what should I do?</string>
+    <string name="question_3">3. My application crashed, what now?</string>
+    <string name="answer_1">The problem is that you your policy does not include this type of claim. If you want to change your policy please contact us in \"Contact\" tab menu.</string>
+    <string name="answer_2">First of all, check if you have correct date and policy number. Drone insurance have to included in your policy. If you want to change your policy, contact in \"Contact\" tab in left menu.</string>
+    <string name="answer_3">Please contact the developers in \"Contact\" tab. We will help you with your problem as soon as possible.</string>
+
+    -- Car Accident Help --
+    <string name="help_what_to">What should I do?</string>
+    <string name="help_text_1">1) Try to be as calm as possible</string>
+    <string name="help_text_2">2) Turn on the hazard warning lights</string>
+    <string name="help_text_3">3) Equip your warning vest and set a warning triangle 50m from the car</string>
+    <string name="help_text_4">4) If there are injured people, provide first aid and call an ambulance (tel. 155 or 112)</string>
+    <string name="help_text_5">When to call the Police? (tel. 158 or 112)</string>
+    <string name="help_text_6">1) Someone is injured or death will occur</string>
+    <string name="help_text_7">2) There is a damage to any of the vehicles including the transported belongings exceeding CZK 100,000</string>
+    <string name="help_text_8">3) Third party property is damaged</string>
+    <string name="help_text_9">If neither of the above points occur, write down a European Accident Record with the other participant</string>
+    <string name="help_text_10">You can now report this accident with this application by pressing the button bellow</string>
+
+    -- Toolbar --
+    <string name="log_out">Log Out</string>
+    <string name="toolbar_title_placeholder">Toolbar Title</string>
+    <string name="Insurances">Insurances</string>
+    <string name="Dashboard">Dashboard</string>
+    <string name="Claims">Claims</string>
+    <string name="not_empty">Cannot be empty</string>
+
+    -- Left Menu --
+    <string name="username_placeholder">User Name</string>
+    <string name="email_placeholder">User Email</string>
+    <string name="menu_open">Open</string>
+    <string name="menu_close">Closed</string>
+    <string name="account">Account</string>
+    <string name="profile">Profile</string>
+    <string name="support">Support </string>
+    <string name="contact">Contact</string>
+    <string name="about">About us</string>
+
+    -- Messages --
+    <string name="message_login_error">Wrong login information</string>
+    <string name="message_register_error">Wrong register information</string>
+    <string name="message_params_error">Wrong parameters</string>
+    <string name="message_user_exists_error">User already exists</string>
+    <string name="message_user_notexists_error">User does not exists</string>
+    <string name="message_default_error">Something went wrong</string>
+    <string name="message_failure_error">An error has occurred: </string>
+    <string name="message_password_error">Wrong Password</string>
+    <string name="message_car_policy_error">Your policy does NOT include Car Accidents</string>
+    <string name="message_drone_policy_error">Your policy does NOT include Drone Insurances</string>
+
+    <string name="message_email_changed">Your Email was successfully changed</string>
+    <string name="message_password_changed">Your Password was successfully changed</string>
+
+    <string name="message_date_must_before">"From" date needs to be from today or in the future</string>
+    <string name="message_invalid_date">Invalid date. Check your dates please</string>
+
+    <string name="view_my_car_damaged">My car damaged</string>
+    <string name="view_other_car_damaged">Other car damaged</string>
+    <string name="view_other_object_damaged">Other object damaged</string>
+
+</resources>
